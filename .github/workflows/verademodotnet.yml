@@ -42,13 +42,15 @@ jobs:
         run: dotnet test --no-build --verbosity normal
 
       - name: Archive Release
-        uses: thedoctor0/zip-release@master
+        uses: thedoctor0/zip-release@main
         with:
-          filename: 'verademo-dotnetcore-build.zip'
-          path: /usr/share/dotnet/bin
+          type: 'zip'
+          directory: .
+          path: '/usr/share/dotnet/bin'
+          filename: 'verademo-dotnetcore.zip'
 
       - name: Run a one-line script
-        run: ls -R /usr/share/dotnet/bin
+        run: ls -R .
 
       - name: Run a one-line script
         run: find . -name verademo-dotnetcore-build.zip
