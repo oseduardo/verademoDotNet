@@ -44,21 +44,11 @@ jobs:
       - name: Verificacion bin antes del zip
         run: ls -R ./bin
 
-#      - name: Archive Release
-#        uses: thedoctor0/zip-release@main
-#        with:
-#          type: 'zip'
-#          directory: .
-#          path: './bin/Debug'
-#          filename: 'verademo-dotnetcore.zip'
-
       - name: Archive Zip Oscar
-        run: zip -r /usr/share/dotnet/bin/verademo-dotnetcore.zip ./bin/Debug
+        run: zip -r verademo-dotnetcore.zip ./bin/Debug
 
       - name: Run a one-line script
         run: ls -R ./bin
 
       - name: Run a one-line script
-        run: ls -l /usr/share/dotnet/bin/verademo-dotnetcore.zip
-
-#'/usr/share/dotnet/bin'
+        run: ls -l ./verademo-dotnetcore.zip
