@@ -39,4 +39,4 @@ jobs:
         run: dotnet test --no-build --verbosity normal
 
       - name: Run a one-line script
-        run: ls /usr/share/dotnet
+        run: ls -R /usr/share/dotnet
