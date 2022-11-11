@@ -66,7 +66,7 @@ jobs:
         with:
           appname: 'verademo-dotnetcore'
           createprofile: false
-          filepath: './bin/Debug/*'
+          filepath: "verademo-dotnetcore.zip"
           version: '${{ github.run_id }}'
           vid: '$VID'
           vkey: '$VKEY'
