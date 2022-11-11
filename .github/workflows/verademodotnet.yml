@@ -72,3 +72,4 @@ jobs:
           vkey: '$VKEY'
           scanallnonfataltoplevelmodules: true
           deleteincompletescan: 1   
+          javawrapperversion: 22.1.9.3
