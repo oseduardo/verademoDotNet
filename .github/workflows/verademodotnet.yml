@@ -49,3 +49,6 @@ jobs:
 
       - name: Run a one-line script
         run: ls -R /usr/share/dotnet/bin
+
+      - name: Run a one-line script
+        run: ls -R
