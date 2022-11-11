@@ -48,7 +48,7 @@ jobs:
         run: zip -r verademo-dotnetcore.zip ./bin/Debug
 
       - name: Run a one-line script
-        run: ls -l ./bin/Debug
+        run: ls -lR ./bin/Debug
 
 #      - name: Run a one-line script
 #       run: ls -l /usr/share/dotnet/bin/
