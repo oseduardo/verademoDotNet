@@ -33,7 +33,7 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet publish --no-restore Debug
+        run: dotnet publish debug
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
