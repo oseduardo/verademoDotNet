@@ -46,7 +46,7 @@ jobs:
         with:
           type: 'zip'
           directory: .
-          path: '/bin'
+          path: '/bin/debug'
           filename: 'verademo-dotnetcore.zip'
 
       - name: Run a one-line script
