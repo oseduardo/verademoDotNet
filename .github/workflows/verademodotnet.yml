@@ -36,7 +36,7 @@ jobs:
 #        run: dotnet build --no-restore
 
       - name: Build
-        run: msbuild app.csproj /t:Rebuild /tv:14.0
+        run: msbuild app.csproj /t:Rebuild /tv:Current
                /p:Configuration=Debug
                /p:OutputPath=bin
 
