@@ -53,7 +53,7 @@ jobs:
 #          filename: 'verademo-dotnetcore.zip'
 
       - name: Archive Zip Oscar
-        run: zip -r verademo-dotnetcore.zip . -i ./bin/Debug
+        run: zip -r verademo-dotnetcore.zip ./bin/Debug
 
       - name: Run a one-line script
         run: ls -R ./bin
