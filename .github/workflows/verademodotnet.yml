@@ -50,7 +50,7 @@ jobs:
           filename: 'verademo-dotnetcore.zip'
 
       - name: Run a one-line script
-        run: ls -R .
+        run: ls -R ./bin
 
       - name: Run a one-line script
         run: find . -name verademo-dotnetcore.zip
