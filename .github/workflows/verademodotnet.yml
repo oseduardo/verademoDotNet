@@ -52,3 +52,20 @@ jobs:
 
       - name: Run a one-line script
         run: ls -l ./verademo-dotnetcore.zip
+
+      # Runs Veracode Policy Scan
+      - name: VERACODE POLICY SCAN - UPLOAD AND SCAN
+        if: ${{ success() }}
+        uses: veracode/veracode-uploadandscan-action@0.2.4
+        env:
+          VID: ${{ SECRETS.VID }}
+          VKEY: ${{ SECRETS.VKEY }}
+        with:
+          appname: 'verademo-dotnetcore'
+          createprofile: false
+          filepath: './verademo-dotnetcore.zip'
+          version: '${{ github.run_id }}'
+          vid: '$VID'
+          vkey: '$VKEY'
+          scanallnonfataltoplevelmodules: true
+          deleteincompletescan: 1   
