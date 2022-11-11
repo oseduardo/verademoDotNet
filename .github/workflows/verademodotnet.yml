@@ -51,7 +51,7 @@ jobs:
         run: ls -R ./bin
 
       - name: Run a one-line script
-        run: ls -l ./*.zip
+        run: ls -l verademo-dotnetcore.zip
 
       # Runs Veracode Policy Scan
       - name: VERACODE POLICY SCAN - UPLOAD AND SCAN
