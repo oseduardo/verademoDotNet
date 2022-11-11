@@ -15,7 +15,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="5.0.0" />
     <PackageReference Include="newtonsoft.json" Version="12.0.3" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
-    <KnownAppHostPack Update="Microsoft.NETCore.App" AppHostPackVersion="$(RuntimeFrameworkVersion)" />
   </ItemGroup>
 
 </Project>

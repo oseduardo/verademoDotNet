@@ -32,13 +32,8 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-#      - name: Build
-#        run: dotnet build --no-restore
-
       - name: Build
-        run: msbuild app.csproj /t:Rebuild /tv:Current
-               /p:Configuration=Debug
-               /p:OutputPath=bin
+        run: dotnet build --no-restore
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
