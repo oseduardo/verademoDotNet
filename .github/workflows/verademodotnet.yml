@@ -51,4 +51,4 @@ jobs:
         run: ls -R /usr/share/dotnet/bin
 
       - name: Run a one-line script
-        run: ls -R
+        run: find /usr/share/dotnet/bin -name verademo-dotnetcore-build.zip
