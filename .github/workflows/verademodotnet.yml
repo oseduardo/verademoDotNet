@@ -36,10 +36,10 @@ jobs:
 #        run: dotnet build --no-restore
 
       - name: Build
-        run: dotnet publish --output '/bin'
+        run: dotnet publish --output '/usr/share/dotnet/bin'
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
 
       - name: Run a one-line script
-        run: ls -R /bin
+        run: ls -R /usr/share/dotnet/bin
