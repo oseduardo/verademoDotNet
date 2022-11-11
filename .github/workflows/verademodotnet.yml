@@ -59,6 +59,6 @@ jobs:
         run: ls -R ./bin
 
       - name: Run a one-line script
-        run: find . -name verademo-dotnetcore.zip
+        run: ls -l ./verademo-dotnetcore.zip
 
 #'/usr/share/dotnet/bin'
