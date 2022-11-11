@@ -36,7 +36,7 @@ jobs:
 #        run: dotnet build --no-restore
 
       - name: Build
-        run: dotnet publish --output '/usr/share/dotnet/bin'
+        run: dotnet publish --output
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
@@ -46,7 +46,7 @@ jobs:
         with:
           type: 'zip'
           directory: .
-          path: '/usr/share/dotnet/bin'
+          path: '/bin'
           filename: 'verademo-dotnetcore.zip'
 
       - name: Run a one-line script
@@ -54,3 +54,5 @@ jobs:
 
       - name: Run a one-line script
         run: find . -name verademo-dotnetcore.zip
+
+#'/usr/share/dotnet/bin'
